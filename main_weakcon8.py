@@ -14,9 +14,7 @@ from torchvision import transforms, datasets
 from util import TwoCropTransform, AverageMeter
 from util import adjust_learning_rate, warmup_learning_rate
 from util import set_optimizer, save_model
-# from networks.resnet_big import WeaklyConResNet
-from networks.yolov8 import WeaklyConResNet
-# from losses import WeaklyConLoss
+from yolov8 import WeaklyConResNet
 from losses import CombinedContrastiveLoss, WeaklyConLoss, DenseContrastiveLoss
 
 try:
